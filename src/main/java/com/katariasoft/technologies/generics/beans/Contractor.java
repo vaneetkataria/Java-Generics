@@ -8,12 +8,10 @@ public class Contractor extends Employee {
 	public Contractor() {
 	}
 
-	public Contractor(String name, String fathersName, String mothersName, String adhaarNo, String address, String city,
-			String pinCode, String state, String country, String phoneNo, String emailId, String id, String department,
-			String educationalQualificartion, String dateOfJoining, String originalCompanyName,
+	public Contractor(String name, String phoneNo, String emailId, String id, String department,
+			String educationalQualificartion, String dateOfJoining, String location, String originalCompanyName,
 			String oirginalCompanyAddress) {
-		super(name, fathersName, mothersName, adhaarNo, address, city, pinCode, state, country, phoneNo, emailId, id,
-				department, educationalQualificartion, dateOfJoining);
+		super(name, phoneNo, emailId, id, department, educationalQualificartion, dateOfJoining, location);
 		this.originalCompanyName = originalCompanyName;
 		this.oirginalCompanyAddress = oirginalCompanyAddress;
 

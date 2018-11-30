@@ -7,11 +7,9 @@ public class Consultant extends Employee {
 	public Consultant() {
 	}
 
-	public Consultant(String name, String fathersName, String mothersName, String adhaarNo, String address, String city,
-			String pinCode, String state, String country, String phoneNo, String emailId, String id, String department,
-			String educationalQualificartion, String dateOfJoining, String perHourRate) {
-		super(name, fathersName, mothersName, adhaarNo, address, city, pinCode, state, country, phoneNo, emailId, id,
-				department, educationalQualificartion, dateOfJoining);
+	public Consultant(String name, String phoneNo, String emailId, String id, String department,
+			String educationalQualificartion, String dateOfJoining, String location, String perHourRate) {
+		super(name, phoneNo, emailId, id, department, educationalQualificartion, dateOfJoining, location);
 		this.perHourRate = perHourRate;
 		// TODO Auto-generated constructor stub
 	}

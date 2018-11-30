@@ -6,18 +6,19 @@ public class Employee extends Person {
 	private String department;
 	private String educationalQualificartion;
 	private String dateOfJoining;
+	private String location;
 
 	public Employee() {
 	}
 
-	public Employee(String name, String fathersName, String mothersName, String adhaarNo, String address, String city,
-			String pinCode, String state, String country, String phoneNo, String emailId, String id, String department,
-			String educationalQualificartion, String dateOfJoining) {
-		super(name, fathersName, mothersName, adhaarNo, address, city, pinCode, state, country, phoneNo, emailId);
+	public Employee(String name, String phoneNo, String emailId, String id, String department,
+			String educationalQualificartion, String dateOfJoining, String location) {
+		super(name, phoneNo, emailId);
 		this.id = id;
 		this.department = department;
 		this.educationalQualificartion = educationalQualificartion;
 		this.dateOfJoining = dateOfJoining;
+		this.location = location;
 	}
 
 	public String getId() {
@@ -50,6 +51,14 @@ public class Employee extends Person {
 
 	public void setDateOfJoining(String dateOfJoining) {
 		this.dateOfJoining = dateOfJoining;
+	}
+
+	public String getLocation() {
+		return location;
+	}
+
+	public void setLocation(String location) {
+		this.location = location;
 	}
 
 }

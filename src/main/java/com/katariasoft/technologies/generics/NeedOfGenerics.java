@@ -1,4 +1,4 @@
-package com.katariasoft.technologies.generics.collections;
+package com.katariasoft.technologies.generics;
 
 import java.time.Instant;
 import java.time.LocalTime;
@@ -6,36 +6,16 @@ import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProducerExtendsConsumerSuper {
-
-	private static final String needOfWildCards = "needOfWildCards";
-	private static final String needOfGenerics = "needOfGenerics";
+public class NeedOfGenerics {
 
 	public static void main(String[] args) {
-		String testCase = "needOfGenerics";
-		switch (testCase) {
-		case needOfGenerics:
-			needOfGenerics();
-			break;
-		case needOfWildCards:
-			needOfWildCards();
-			break;
-		default:
-			break;
-		}
-
+		conceptuateNeedOfGenerics();
 	}
 
-	private static void needOfWildCards() {
-	}
-
-	private static void needOfGenerics() {
+	private static void conceptuateNeedOfGenerics() {
 		List studentNamesList = new ArrayList();
 		studentNamesList.add("Vaneet");
 		studentNamesList.add("Pratapi");
-		studentNamesList.add("Deepak");
-		studentNamesList.add("Dheeraj");
-		studentNamesList.add("Franka");
 		toSomeAnotherMethod(studentNamesList);
 		sayHiToAllStudents(studentNamesList);
 	}
