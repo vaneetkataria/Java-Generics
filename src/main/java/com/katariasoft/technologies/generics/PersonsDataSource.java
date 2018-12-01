@@ -9,25 +9,21 @@ import com.katariasoft.technologies.generics.beans.PermanentEmployee;
 import com.katariasoft.technologies.generics.beans.Person;
 
 public class PersonsDataSource {
-	private static List<Person> persons = populatePersons();
-	private static List<Employee> employees = populateEmployees();
-	private static List<PermanentEmployee> permanentEmployees = populatePermanentEmployees();
-	private static List<Intern> interns = populateInterns();
 
 	public static List<Person> getPersons() {
-		return persons;
+		return populatePersons();
 	}
 
 	public static List<Employee> getEmployees() {
-		return employees;
+		return populateEmployees();
 	}
 
 	public static List<PermanentEmployee> getPermanentEmployees() {
-		return permanentEmployees;
+		return populatePermanentEmployees();
 	}
 
 	public static List<Intern> getInterns() {
-		return interns;
+		return populateInterns();
 	}
 
 	private static List<Person> populatePersons() {
