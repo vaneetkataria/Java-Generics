@@ -9,11 +9,11 @@ import java.util.List;
 public class NeedOfGenerics {
 
 	public static void main(String[] args) {
-		conceptiseNeedOfGenerics();
+		conceptuliseNeedOfGenerics();
 	}
 
 	@SuppressWarnings("unchecked")
-	private static void conceptiseNeedOfGenerics() {
+	private static void conceptuliseNeedOfGenerics() {
 		@SuppressWarnings("rawtypes")
 		List studentNamesList = new ArrayList();
 		studentNamesList.add("Vaneet");
