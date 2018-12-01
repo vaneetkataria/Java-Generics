@@ -19,6 +19,7 @@ public class SurfaceAreaAndVolumesFunctions {
 				"Paint charges for 10 , 10 and 5.5 is :" + functions.paintingCostCalculator.apply(10, 10, 5.5));
 		System.out.println("Distamper Charges for 10 , 10 , 5.5 is "
 				+ functions.finalDistemperChargesCalculator.apply(10, 10, 5.5));
+		System.out.println(TriFunction.identity().apply(5));
 
 	}
 

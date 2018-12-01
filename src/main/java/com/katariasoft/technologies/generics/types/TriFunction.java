@@ -11,4 +11,8 @@ public interface TriFunction<T, U, V, R> {
 		return (t, u, v) -> subsequentFunction.apply(this.apply(t, u, v));
 	}
 
+	static <T> Function<T, T> identity() {
+		return t -> t;
+	}
+
 }
