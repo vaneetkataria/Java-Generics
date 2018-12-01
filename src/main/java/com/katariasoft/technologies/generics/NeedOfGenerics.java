@@ -9,10 +9,12 @@ import java.util.List;
 public class NeedOfGenerics {
 
 	public static void main(String[] args) {
-		conceptuateNeedOfGenerics();
+		conceptiseNeedOfGenerics();
 	}
 
-	private static void conceptuateNeedOfGenerics() {
+	@SuppressWarnings("unchecked")
+	private static void conceptiseNeedOfGenerics() {
+		@SuppressWarnings("rawtypes")
 		List studentNamesList = new ArrayList();
 		studentNamesList.add("Vaneet");
 		studentNamesList.add("Pratapi");
@@ -20,16 +22,17 @@ public class NeedOfGenerics {
 		sayHiToAllStudents(studentNamesList);
 	}
 
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	private static void toSomeAnotherMethod(List studentNamesList) {
 		studentNamesList.add(Instant.now());
 		studentNamesList.add(1);
 		studentNamesList.add(LocalTime.now(ZoneId.systemDefault()));
 	}
 
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	private static void sayHiToAllStudents(List listToPrint) {
-		// Say Hi to all students.
-		for (Object stuName : listToPrint)
-			System.out.println("Hi " + (String) stuName);
+		listToPrint.forEach(s -> System.out.println("Hi " + (String) s));
+
 	}
 
 }
